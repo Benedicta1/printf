@@ -9,7 +9,7 @@
 
 void _get_int(int num)
 {
-	int x, r_val;
+	int x;
 
 	if (num == 0)
 		return;
@@ -18,7 +18,4 @@ void _get_int(int num)
 
 	_get_int(x);
 	_putchar(num % 10 + '0');
-
-	return (0);
 }
-
