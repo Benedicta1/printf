@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 			int my_val = _put_s(va_arg(args, char*));
 
 			x++;
-			r_value += (my_val - 1);
+			r_value += my_val;
 		}
 		else if (format[x + 1] == '%')
 		{
@@ -43,5 +43,7 @@ int _printf(const char *format, ...)
 		}
 		r_value += 1;
 	}
+
+	va_end(args);
 	return (r_value);
 }

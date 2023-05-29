@@ -1,3 +1,4 @@
+#include <stdarg.h>
 #include "main.h"
 
 /**
@@ -13,6 +14,12 @@ void _get_int(int num)
 
 	if (num == 0)
 		return;
+
+	if (num < 0)
+	{
+		_putchar('-');
+		num = -num;
+	}
 
 	x = num / 10;
 
