@@ -1,4 +1,3 @@
-#include <stdarg.h>
 #include "main.h"
 
 /**
@@ -11,7 +10,7 @@ int _put_s(char *string)
 {
 	int bg = 0, r_val = 0;
 
-	if (string != NULL)
+	if (string)
 	{
 		while (string[bg] != '\0')
 		{
